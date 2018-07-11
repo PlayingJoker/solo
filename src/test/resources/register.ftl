@@ -74,10 +74,10 @@
             </div>
 
             <div class="footerWrapper">
-                <div class="footer">
-                    &copy; ${year} - <a href="${servePath}">${blogTitle}</a><br/>
-                    Powered by <a href="https://b3log.org" target="_blank">B3log 开源</a> • <a href="https://b3log.org/services/#solo" target="_blank">Solo</a> ${version}
-                </div>
+                <#--<div class="footer">-->
+                    <#--&copy; ${year} - <a href="${servePath}">${blogTitle}</a><br/>-->
+                    <#--Powered by <a href="https://b3log.org" target="_blank">B3log 开源</a> • <a href="https://b3log.org/services/#solo" target="_blank">Solo</a> ${version}-->
+                <#--</div>-->
             </div>
         </div>
         <script type="text/javascript" src="${staticServePath}/js/lib/jquery/jquery.min.js" charset="utf-8"></script>

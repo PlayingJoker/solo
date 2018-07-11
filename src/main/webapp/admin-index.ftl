@@ -164,9 +164,9 @@
                 <div id="tabsPanel_about" class="none"></div>
             </div>
             <div class="clear"></div>
-            <div class="footer">
-                Powered by <a href="https://b3log.org" target="_blank">B3log 开源</a> • <a href="https://hacpai.com/tag/Solo" target="_blank">Solo</a> ${version}
-            </div>
+            <#--<div class="footer">-->
+                <#--Powered by <a href="https://b3log.org" target="_blank">B3log 开源</a> • <a href="https://hacpai.com/tag/Solo" target="_blank">Solo</a> ${version}-->
+            <#--</div>-->
         </div>
         <script src="${staticServePath}/js/lib/compress/admin-lib.min.js"></script>
         <script src="${servePath}/js/lib/tiny_mce/tiny_mce.js"></script>

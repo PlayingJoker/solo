@@ -35,10 +35,10 @@
             </div>
         </div>
         <div class="footerWrapper">
-            <div class="footer">
-                &copy; ${year}
-                Powered by <a href="https://b3log.org" target="_blank">B3log 开源</a>, ver ${version}
-            </div>
+            <#--<div class="footer">-->
+                <#--&copy; ${year}-->
+                <#--Powered by <a href="https://b3log.org" target="_blank">B3log 开源</a>, ver ${version}-->
+            <#--</div>-->
         </div>
     </body>
 </html>

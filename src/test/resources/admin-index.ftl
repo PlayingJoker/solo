@@ -35,7 +35,7 @@
         <div id="allPanel">
             <div id="top">
                 <a href="https://b3log.org" target="_blank" class="hover">
-                    Solo
+                    Monk
                 </a>
                
                 <span class="right"> 

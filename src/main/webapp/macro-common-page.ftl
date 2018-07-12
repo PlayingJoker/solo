@@ -36,7 +36,7 @@
     <div class="content">
         <div class="logo">
             <a href="https://b3log.org" target="_blank">
-                <img width="128" border="0" alt="Solo" title="Solo" src="${staticServePath}/images/logo.png"/>
+                <img width="128" border="0" alt="Monk" title="Monk" src="${staticServePath}/images/logo.png"/>
             </a>
         </div>
         <div class="main">

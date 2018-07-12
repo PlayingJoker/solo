@@ -23,7 +23,7 @@
 <#nested>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="author" content="${blogTitle?html}" />
-<meta name="generator" content="Solo" />
+<meta name="generator" content="Monk" />
 <meta name="owner" content="B3log Team" />
 <meta name="revised" content="${blogTitle?html}, ${year}" />
 <meta name="copyright" content="B3log" />

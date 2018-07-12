@@ -83,7 +83,7 @@
 <div id="showTop"></div>
 <div id="top">
     <a href="https://github.com/b3log/solo" target="_blank" class="hover">
-        Solo
+        Monk
     </a>
     <span class="left">&nbsp;${onlineVisitor1Label}${onlineVisitorCnt}</span>
     <span class="right" id="admin" data-login="${isLoggedIn?string}">

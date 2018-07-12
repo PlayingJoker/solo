@@ -31,7 +31,7 @@
 </head>
 <body>
 <div class="search__header fn-clear">
-    <a href="${servePath}"><img class="fn-left" width="44" border="0" alt="Solo" title="Solo" src="${staticServePath}/images/logo.png"/></a>
+    <a href="${servePath}"><img class="fn-left" width="44" border="0" alt="Monk" title="Monk" src="${staticServePath}/images/logo.png"/></a>
     <div class="search__input fn-left">
         <input value="${keyword}" id="keyword" onkeypress="if(event.keyCode===13){document.getElementById('searchBtn').click()}">
         <button id="searchBtn" onclick="window.location.href='${servePath}/search?keyword=' + document.getElementById('keyword').value">搜索</button>
@@ -102,7 +102,7 @@
         </#if>
     </nav>
 <#else>
-No Result, Return to <a href="${servePath}">Index</a> or <a href="https://hacpai.com">HacPai</a>.
+No Result, Return to <a href="${servePath}">Index</a> or <a href="https://www.liuzhaoning.com">Monk</a>.
 </#if>
 </div>
 

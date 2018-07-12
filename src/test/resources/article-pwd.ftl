@@ -22,13 +22,13 @@
     <head>
         <meta charset="utf-8" />
         <title>${articleViewPwdLabel}</title>
-        <meta name="keywords" content="Solo,Java 博客,开源" />
+        <meta name="keywords" content="Monk,Java 博客,开源" />
         <meta name="description" content="An open source blog with Java. Java 开源博客" />
-        <meta name="owner" content="B3log Team" />
-        <meta name="author" content="B3log Team" />
-        <meta name="generator" content="Solo" />
-        <meta name="copyright" content="B3log" />
-        <meta name="revised" content="B3log, ${year}" />
+        <meta name="owner" content="Joker Team" />
+        <meta name="author" content="Joker Team" />
+        <meta name="generator" content="Monk" />
+        <meta name="copyright" content="Joker" />
+        <meta name="revised" content="Joker, ${year}" />
         <meta name="robots" content="noindex, follow" />
         <meta http-equiv="Window-target" content="_top" />
         <link type="text/css" rel="stylesheet" href="${staticServePath}/css/default-init${miniPostfix}.css?${staticResourceVersion}" charset="utf-8" />

@@ -24,7 +24,7 @@
     <div class="module-body padding12 fn__flex">
         <div class="about-logo">
             <a href="https://b3log.org" target="_blank">
-                <img width="128" src="${staticServePath}/images/logo.png" alt="Solo" title="Solo" />
+                <img width="128" src="${staticServePath}/images/logo.png" alt="Monk" title="Monk" />
             </a>
         </div>
         <div class="left content-reset about__panel" style="margin-left: 20px;">

@@ -299,7 +299,7 @@ public final class SoloServletListener extends AbstractServletListener {
             if (desiredView == null && !Requests.mobileRequest(httpServletRequest) || desiredView != null && desiredView.equals("normal")) {
                 desiredView = preference.getString(Skin.SKIN_DIR_NAME);
             } else {
-                desiredView = "mobile";
+                desiredView = preference.getString(Skin.SKIN_DIR_NAME);
                 LOGGER.log(Level.DEBUG, "The request [URI={0}] comes frome mobile device", requestURI);
             }
 

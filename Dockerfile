@@ -1,24 +1,13 @@
-FROM maven:3
-LABEL maintainer="Tomaer Ma<i@tomaer.com>"
+FROM playingjoker/jdk1.8:latest
 
-WORKDIR /opt/b3log/solo
-ADD . /tmp
+RUN mkdir -p /data/logs
 
-RUN cd /tmp && mvn install -Pci && mv target/solo/* /opt/b3log/solo/ \
-    && mkdir -p /opt/b3log/backup/ && mkdir -p /opt/b3log/tmp/ \
-    && rm -rf /opt/b3log/solo/WEB-INF/classes/local.properties /opt/b3log/solo/WEB-INF/classes/mail.properties /opt/b3log/solo/WEB-INF/classes/latke.properties \
-    && rm -rf /tmp/* && rm -rf ~/.m2
+ADD solo /webapp
 
-ADD ./src/main/resources/docker/entrypoint.sh $WORKDIR
-ADD ./src/main/resources/docker/local.properties.h2 /opt/b3log/tmp
-ADD ./src/main/resources/docker/local.properties.mysql /opt/b3log/tmp
-ADD ./src/main/resources/docker/mail.properties /opt/b3log/tmp
-ADD ./src/main/resources/docker/latke.properties /opt/b3log/tmp
+ADD entrypoint.sh /webapp
 
-RUN chmod 777 /opt/b3log/solo/entrypoint.sh
+EXPOSE 8800
 
-VOLUME ["/opt/b3log/backup/"]
+VOLUME /data
 
-EXPOSE 8080
-
-ENTRYPOINT [ "/opt/b3log/solo/entrypoint.sh" ]
+CMD /webapp/entrypoint.sh

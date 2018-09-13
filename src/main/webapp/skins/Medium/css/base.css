@@ -1431,3 +1431,26 @@ blockquote {
     0%   { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
+.upping {
+     position: absolute;
+     top: 300px;
+     left: 300px;
+     animation: upping 1.5s ;
+     color: #f00;
+     user-select:none;
+}
+
+@keyframes upping {
+    0% {
+        opacity: 1;
+        margin-top: 0px;
+    }
+    30% {
+        transform: scale(2)
+    }
+    100% {
+        opacity: 0;
+        margin-top: -300px;
+        font-size: 10px;
+    }
+}

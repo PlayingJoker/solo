@@ -56,6 +56,56 @@ var Skin = {
       Skin.initArticle();
       Skin.initComment($('.post__tags').data('oid'), $('.post__tags').data('tag'))
     })
+
+      $.fn.clickUpping = function() {
+          var $this = $(this);
+          $this.arr = ['骄傲', '无比骄傲', '骄傲突破天际', '骄傲冲出地球', '骄傲冲出宇宙', '龙傲天', '梅花傲雪', '一身傲骨', '傲娇'];
+          $this.timer = null;
+          $this.currentPos = {
+              x: 0,
+              y: 0
+          };
+          $this.on('mousedown', function(e) {
+
+              $this.on('mousemove', move);
+
+          });
+          $this.on('mouseup', function(e) {
+
+              $this.off('mousemove', move);
+              $this.timer = window.setTimeout(function() {
+                  move(e, true);
+              }, 0);
+          });
+          var isMove = function(current, old) {
+              return Math.abs(current - old)>50;
+          }
+          var move = function(e, clickEvent) {
+              clearTimeout($this.timer);
+              var tempNode = document.createElement('div');
+              tempNode.className = 'upping';
+
+              var tempText = $this.arr.shift();
+              $this.arr.push(tempText);
+              tempNode.innerText = tempText;
+              var len = tempText.length;
+              var pageX = e.pageX-(16*len)/2;
+              var pageY = e.pageY;
+
+              if (!clickEvent && !(isMove(pageX, $this.currentPos.x) || isMove(pageY, $this.currentPos.y))) {
+                  return;
+              }
+              $this.currentPos.x = pageX;
+              $this.currentPos.y = pageY;
+              tempNode.style.left = pageX+'px';
+              tempNode.style.top = pageY+'px';
+              document.body.appendChild(tempNode);
+              setTimeout(function() {
+                  document.body.removeChild(tempNode);
+              }, 1500);
+          }
+      }
+      // $(document).clickUpping();
   },
   initTags: function () {
     var $tags = $('#tags');
